@@ -1,0 +1,42 @@
+name: igvf
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scanpy
+  - anndata
+  - biopython
+  - dask
+  - numba
+  - flox
+  - htslib>=1.9
+  - bedtools
+  - jupyter
+  - jupyter_contrib_nbextensions
+  - leidenalg
+  - natsort
+  - networkx
+  - opentsne
+  - plotly
+  - pybedtools
+  - pyBigWig
+  - pynndescent
+  - pysam
+  - pytables
+  - scikit-learn
+  - statsmodels
+  - xarray
+  - yaml
+  - zarr
+  - tqdm
+  - pip:
+      - papermill
+      - imbalanced-learn
+      - ALLCools
