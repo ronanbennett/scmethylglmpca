@@ -4,7 +4,7 @@ import pandas as pd
 import scanpy as sc
 import matplotlib.pyplot as plt
 
-from glm_pca import fit_binomial_glm_pca_earlystop, fit_binomial_glm_pca_earlystop_torch
+from glm_pca import fit_binomial_glm_pca_earlystop
 
 
 # ---------- Helper: PCA on rows ----------

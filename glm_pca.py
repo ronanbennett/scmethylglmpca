@@ -70,7 +70,16 @@ def fit_binomial_glm_pca_earlystop(
 
     Returns
     -------
-    U_best, V_best, alpha_best, history, masks
+    U_best : (n_cells, n_components)
+        Cell latent factors (scores / embeddings).
+    V_best : (n_loci, n_components)
+        Locus latent factors (loadings).
+    alpha_best : (n_loci,)
+        Locus-specific intercepts (baseline logit methylation).
+    history : dict
+        Training and validation NLL history and early-stopping metadata.
+    masks : dict
+        Boolean masks for train and validation entries.
 
     history contains:
         - "iters":       iteration numbers where NLL was evaluated
